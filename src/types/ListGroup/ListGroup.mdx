@@ -1,0 +1,24 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './ListGroup.stories';
+
+<Meta of={Stories} />
+
+# ListGroup
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+Also we can use the `isMulti` prop on the lists
+
+<Canvas of={Stories.IsMulti} />
+
+If we want to choose in each list all the options we can set
+`consumeOptions: false` (by default is `true`)
+
+<Canvas of={Stories.ConsumeOptions} />
+
+<Canvas of={Stories.Axis} />

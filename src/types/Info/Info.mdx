@@ -1,0 +1,24 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Info.stories';
+
+<Meta of={Stories} />
+
+# Info
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+The info change the style by the prop `status` that by default is
+`success`, and could be one of: **success**, **error**, **warning** and
+**help**.
+
+<Canvas of={Stories.Status} />
+
+You can use `padding` prop for the padding, use css compatible values like
+`5rem` or `5px`
+
+<Canvas of={Stories.Padding} />

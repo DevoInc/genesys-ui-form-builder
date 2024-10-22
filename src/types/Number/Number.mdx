@@ -1,0 +1,46 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Number.stories';
+
+<Meta of={Stories} />
+
+# Number
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+With the `float` prop we can define if the field can contain float numbers, by
+default is `true`
+
+<Canvas of={Stories.Float} />
+
+The props `min` and `max` are available for limit the user input
+
+<Canvas of={Stories.Limits} />
+
+## Validation
+
+We can add `validation` with a function that returns a validation object
+
+```js
+{
+  result: true, // or false
+  status?: 'error', // the allow status are: 'success', 'warning', 'error' or
+                   // 'info', or nothing in case no state neeeded
+  message?: 'text' // The validation message to show
+}
+```
+
+<Canvas of={Stories.Validation} />
+
+Case starting with `undefined` value
+
+<Canvas of={Stories.ValidationStartingWithNull} />
+
+These are two number field validating a min and max values, so the min has a
+validation for avoid exceed the max and viceversa
+
+<Canvas of={Stories.MinAndMax} />

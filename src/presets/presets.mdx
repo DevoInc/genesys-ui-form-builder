@@ -1,0 +1,19 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Presets/Introduction" />
+
+# Presets
+
+Presets are prefabricated configurations for a repetitive groups of fields.
+
+```js
+import { FormBuilder, getFontWeight } from '@devoinc/genesys-ui-form-builder';
+
+<FormBuilder
+  model={{
+    children: [
+      getFontWeight()
+    ]
+  }}
+/>
+```

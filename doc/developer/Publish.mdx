@@ -1,0 +1,41 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Developer guide/Publish" />
+
+# Publish
+
+In a clean environment do:
+
+```sh
+npm ci
+npm run release
+```
+
+```sh
+// You can specify the release type with
+npm run release -- -r <major|minor|patch>
+
+// Or even a prerelease with
+npm run release -- -p
+```
+
+For test the next version but don't do anything use
+
+```sh
+npm run --ignore-scripts release -- --dry-run
+```
+
+For known all the posible options for release check
+
+```sh
+./node_modules/.bin/standard-version --help
+```
+
+Also maybe you want to know what is going to be on the published package for
+this you can use
+
+```sh
+npm pack
+```
+
+This generate a tarball and list each file inside the package.

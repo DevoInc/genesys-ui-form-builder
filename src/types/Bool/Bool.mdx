@@ -1,0 +1,28 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Bool.stories';
+
+<Meta of={Stories} />
+
+# Bool
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+The main prop is `value`, if you use `true` then the switch will be on
+the **on** side, otherwise will be on the **off** side (If no `name` is defined
+then the field is align to the left)
+
+<Canvas of={Stories.Value} />
+
+You can use props `name` and `helper` for add info to the component
+
+<Canvas of={Stories.Decorators} />
+
+If you need space you can use `padding` prop for the padding, use css
+compatible values like `5rem` or `5px`
+
+<Canvas of={Stories.Padding} />

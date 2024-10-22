@@ -1,0 +1,29 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Visibility.stories';
+
+<Meta of={Stories} />
+
+# Visibility
+
+We have two ways of achieve the visibility management:
+
+- **Show/Hide:** with this method you can maintain the values of the
+  branch and in the model the values still exists.
+- **Create/Remove:** with this method the model will have the branch or
+  nothing at all.
+
+## Example of show/hide
+
+In this example if you show the hidden text, change its value and hide again,
+when you open it again the content will be intact.
+
+<Canvas of={Stories.Example} />
+
+## Example of create/remove
+
+This another example shows the opposite behavior, if you repeat the steps
+described above then the content of the hidden field will be empty each time you
+open it again.
+
+<Canvas of={Stories.Example2} />

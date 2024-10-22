@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#docs-root h1 {
+  margin: 0 0 3rem 0;
+}
+
+#docs-root b, #docs-root strong {
+  font-weight: 900;
+}
+
+#docs-root code, #docs-root pre {
+  font-family: monospace;
+}

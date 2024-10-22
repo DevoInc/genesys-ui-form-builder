@@ -1,0 +1,33 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Group.stories';
+
+<Meta of={Stories} />
+
+# Group
+
+The group is a type that can contains other types using its prop `children`
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+The group could start closed using the prop `isExpanded` that by default is
+`true`.
+
+<Canvas of={Stories.IsExpanded} />
+
+You can use props `name` for add info for the user
+
+<Canvas of={Stories.Decorators} />
+
+Another interesting prop is `truncateLine` to truncate the name of the
+group in `n` lines, by default is `1`
+
+<Canvas of={Stories.TruncateLine} />
+
+Here is an example of nested groups
+
+<Canvas of={Stories.NestedGroups} />

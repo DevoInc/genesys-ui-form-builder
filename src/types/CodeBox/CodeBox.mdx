@@ -1,0 +1,31 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './CodeBox.stories';
+
+<Meta of={Stories} />
+
+# CodeBox
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+The main prop is `value`, this is the code that will appear inside of the
+`CodeBox`
+
+<Canvas of={Stories.Value} />
+
+You can use props `name` and `placeholder` for add info for the user
+
+<Canvas of={Stories.Decorators} />
+
+The `editable` prop shows a button, by default is `true`
+
+<Canvas of={Stories.Editable} />
+
+If you need space you can use `padding` prop for the padding, use css
+compatible values like `5rem` or `5px`
+
+<Canvas of={Stories.Padding} />

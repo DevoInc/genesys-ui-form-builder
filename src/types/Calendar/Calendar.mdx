@@ -1,0 +1,23 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Calendar.stories';
+
+<Meta of={Stories} />
+
+# Calendar
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+We can change the size of the `Calendar` with the prop `size` that could be:
+
+- sm
+- md
+- lg
+
+The default value for this prop is `sm`
+
+<Canvas of={Stories.Size} />

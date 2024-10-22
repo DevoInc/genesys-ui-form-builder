@@ -1,0 +1,33 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Label.stories';
+
+<Meta of={Stories} />
+
+# Label
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+The main props for `label` are:
+
+- `name`
+- `value`
+
+<Canvas of={Stories.Decorators} />
+
+You can use `padding` prop for the padding, use css compatible values like
+`cmp-xs` or `cmp-xl`
+
+<Canvas of={Stories.Padding} />
+
+Here another example but with a long text like `lorem ipsum` but with more
+style :)
+
+<Canvas of={Stories.LoremIpsum} />
+
+This `lorem ipsum` and more can be find on
+[meettheipsums.com](https://meettheipsums.com/).

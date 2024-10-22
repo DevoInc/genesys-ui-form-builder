@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "jsx": "react",
+    "paths": {
+      "test-utils": [
+        "./utils/test-utils"
+      ],
+      "@sb": [
+        "./src/stories/index"
+      ]
+    },
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "ES6",
+    "types": [
+      "jest"
+    ],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src",
+    "src/stories",
+    "doc"
+  ]
+}

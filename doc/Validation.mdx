@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Validation" />
+
+# Validation
+
+Some fields have a validation mechanism: text, number and textarea.
+
+This is an example of configuration.
+
+```ts
+{
+  key: 'field',
+  name: 'Text',
+  type: 'text',
+  placeholder: 'Insert an email',
+  helper: 'Type any no email text for see the validation message.',
+  validation: (value) => !validateEmail(value) ?
+    {
+      status: 'error',
+      message: 'Value has to be a valid email address.',
+      result: false
+    } : {
+      result: true
+    }
+}
+```

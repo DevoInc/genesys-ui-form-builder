@@ -1,0 +1,19 @@
+node_modules
+storybook-static
+public
+dist
+
+*.iml
+.cache
+.nyc_output
+.history
+.idea
+.vscode
+.DS_Store
+
+coverage
+test-report.xml
+
+# stryker temp files
+.stryker-tmp
+reports

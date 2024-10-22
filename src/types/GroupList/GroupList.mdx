@@ -1,0 +1,26 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './GroupList.stories';
+
+<Meta of={Stories} />
+
+# GroupList
+
+The groupList is a type that show a list of groups, this groups could have any
+other fields.
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## No new group
+
+<Canvas of={Stories.NoNewGroup} />
+
+## Sortable
+
+<Canvas of={Stories.Sortable} />
+
+## No allow new items
+
+<Canvas of={Stories.NoAllowNewItems} />

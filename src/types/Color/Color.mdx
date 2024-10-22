@@ -1,0 +1,37 @@
+import { Meta, Canvas } from '@storybook/blocks';
+
+import * as Stories from './Color.stories';
+
+<Meta of={Stories} />
+
+# Color
+
+## Example
+
+<Canvas of={Stories.Base} />
+
+## Description
+
+The main prop is `value` and should be a valid color in
+[css format](https://developer.mozilla.org/es/docs/Web/CSS/color_value),
+here are three examples with value in **hex format**, **rgb format** and **hsla
+format**
+
+<Canvas of={Stories.ValueHex} />
+
+<Canvas of={Stories.ValueRGB} />
+
+<Canvas of={Stories.ValueHSLA} />
+
+You can use props `name` and `helper` for add info to the component
+
+<Canvas of={Stories.Decorators} />
+
+If you need space you can use `padding` prop for the padding, use css
+compatible values like `5rem` or `5px`
+
+<Canvas of={Stories.Padding} />
+
+You can use `disable` prop for make the color disabled to use
+
+<Canvas of={Stories.Disabled} />
