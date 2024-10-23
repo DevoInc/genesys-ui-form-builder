@@ -8,12 +8,12 @@ import {
   METHODS,
 } from '../hooks';
 import { normalize, round } from './filter';
-import { ComponentProps, Method } from '../definitions';
+import { TComponentProps, TMethod } from '../definitions';
 import { useFocus } from '../hooks/useFocus';
 
-export interface NumberProps extends ComponentProps<number> {
+export interface NumberProps extends TComponentProps<number> {
   id: string;
-  method: Method;
+  method: TMethod;
   min: number;
   max: number;
   disabled: boolean;

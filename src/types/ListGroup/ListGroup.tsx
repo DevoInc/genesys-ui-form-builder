@@ -10,11 +10,11 @@ import {
   replaceIndex,
 } from './values';
 import { filterOptions, isSomeOptionUnused } from './options';
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 import { ListGroupValue } from './declarations';
 
 export interface ListGroupProps
-  extends ComponentProps<ListGroupValue[]>,
+  extends TComponentProps<ListGroupValue[]>,
     Pick<
       ListProps,
       | 'creatable'

@@ -7,14 +7,14 @@ import {
   type TValidateFunction,
   METHODS,
 } from '../hooks';
-import { ComponentProps, Method } from '../definitions';
+import { TComponentProps, TMethod } from '../definitions';
 import { useFocus } from '../hooks/useFocus';
 
-export interface TextProps extends ComponentProps<string> {
+export interface TextProps extends TComponentProps<string> {
   disabled: boolean;
   helper: string;
   id: string;
-  method: Method;
+  method: TMethod;
   name: string;
   placeholder: string;
   validation: TValidateFunction;
@@ -40,7 +40,6 @@ export const Text: React.FC<TextProps> = ({
       value,
       focusRef,
     });
-  console.log(status);
   return (
     <Input
       disabled={disabled}

@@ -7,8 +7,8 @@ const config: StorybookConfig = {
     disableTelemetry: true,
   },
   stories: [
-    '../doc/Welcome.mdx',
-    '../doc/**/*.@(mdx|stories.tsx)',
+    '../stories/Welcome.mdx',
+    '../stories/**/*.@(mdx|stories.tsx)',
     '../src/**/*.@(mdx|stories.tsx)',
   ],
   addons: [

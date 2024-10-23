@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { Typography, Form } from '@devoinc/genesys-ui';
 
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 
-export interface LabelProps extends ComponentProps<string> {
+export interface LabelProps extends TComponentProps<string> {
   name: string;
 }
 

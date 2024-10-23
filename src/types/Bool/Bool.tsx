@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { Switch } from '@devoinc/genesys-ui';
 
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 
-export interface BoolProps extends ComponentProps<boolean> {
+export interface BoolProps extends TComponentProps<boolean> {
   helper?: string;
   name?: string;
 }

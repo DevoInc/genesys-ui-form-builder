@@ -13,13 +13,13 @@ import { ButtonGroup } from '@devoinc/genesys-ui';
 import { GIPlusSignAddNew } from '@devoinc/genesys-icons';
 
 import { Group } from '../Group';
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 import { Item } from './Item';
 import { add, remove, move, getNextKey } from './list';
 import { IModelItem } from './definitions';
 import { IModelNode } from '../../model';
 
-export interface GroupListProps extends ComponentProps<IModelItem[]> {
+export interface GroupListProps extends TComponentProps<IModelItem[]> {
   prototype: IModelNode[];
   name?: string;
   childName?: string;

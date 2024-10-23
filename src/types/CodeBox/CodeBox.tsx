@@ -3,9 +3,9 @@ import * as React from 'react';
 import { Flex, Form, IconButton, Label, Typography } from '@devoinc/genesys-ui';
 import { GIPencilEdit } from '@devoinc/genesys-icons';
 
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 
-export interface CodeBoxProps extends ComponentProps<string> {
+export interface CodeBoxProps extends TComponentProps<string> {
   editable: boolean;
   name: string;
   placeholder: string;

@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { type TActiveStatus, Banner } from '@devoinc/genesys-ui';
 
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 
-export interface InfoProps extends ComponentProps<string> {
+export interface InfoProps extends TComponentProps<string> {
   name: string;
   status: TActiveStatus;
 }

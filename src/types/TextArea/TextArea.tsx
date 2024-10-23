@@ -2,17 +2,17 @@ import * as React from 'react';
 
 import { Textarea } from '@devoinc/genesys-ui';
 
-import { useInputInternalState, ValidateFunction, METHODS } from '../hooks';
-import { ComponentProps, Method } from '../definitions';
+import { useInputInternalState, TValidateFunction, METHODS } from '../hooks';
+import { TComponentProps, TMethod } from '../definitions';
 import { useFocus } from '../hooks/useFocus';
 
-export interface TextAreaProps extends ComponentProps<string> {
+export interface TextAreaProps extends TComponentProps<string> {
   disabled: boolean;
   helper: string;
-  method: Method;
+  method: TMethod;
   name: string;
   placeholder: string;
-  validation: ValidateFunction;
+  validation: TValidateFunction;
   rows: number;
 }
 

@@ -1,4 +1,3 @@
-import type { TFieldStatus } from '@devoinc/genesys-ui';
 import type { IModelNode, ModelNodeType, IModelNodeAction } from './model';
 
 export type ChangeFunction = (val: unknown) => void;

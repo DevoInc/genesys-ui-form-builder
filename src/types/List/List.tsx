@@ -4,10 +4,10 @@ import { Select } from '@devoinc/genesys-ui';
 
 import { validateOptions, validateValue } from './validations';
 import { OptionType } from './definitions';
-import { ComponentProps } from '../definitions';
+import { TComponentProps } from '../definitions';
 import { getValue } from './options';
 
-export interface ListProps extends ComponentProps<string[] | string> {
+export interface ListProps extends TComponentProps<string[] | string> {
   /** Allow to create items */
   creatable?: boolean;
   /** Text to show at the bottom of the component */
