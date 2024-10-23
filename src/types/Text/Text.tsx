@@ -6,9 +6,9 @@ import {
   useInputInternalState,
   type TValidateFunction,
   METHODS,
-} from '../hooks';
+} from '../../hooks';
 import { TComponentProps, TMethod } from '../definitions';
-import { useFocus } from '../hooks/useFocus';
+import { useFocus } from '../../hooks/useFocus';
 
 export interface TextProps extends TComponentProps<string> {
   disabled: boolean;

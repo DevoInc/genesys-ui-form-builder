@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { Textarea } from '@devoinc/genesys-ui';
 
-import { useInputInternalState, TValidateFunction, METHODS } from '../hooks';
+import { useInputInternalState, TValidateFunction, METHODS } from '../../hooks';
 import { TComponentProps, TMethod } from '../definitions';
-import { useFocus } from '../hooks/useFocus';
+import { useFocus } from '../../hooks/useFocus';
 
 export interface TextAreaProps extends TComponentProps<string> {
   disabled: boolean;

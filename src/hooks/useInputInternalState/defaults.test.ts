@@ -6,7 +6,11 @@ describe('hook', () => {
   describe('useInputInternalState', () => {
     describe('defaults', () => {
       it('defaultValidate', () => {
-        expect(defaultValidate()).toEqual({ result: true });
+        expect(defaultValidate(42)).toEqual({
+          result: true,
+          status: 'base',
+          message: null,
+        });
       });
     });
   });

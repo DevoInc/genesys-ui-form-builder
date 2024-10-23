@@ -1,11 +1,11 @@
 import { IModelNodeAction, IModelNode } from '../model';
 
-type ResetFunction = () => void;
+export type TResetFunction = () => void;
 
 export type TOnChangeFuntion<T> = (
   value: T,
   prop?: string,
-  reset?: ResetFunction,
+  reset?: TResetFunction,
 ) => void;
 
 export type TComponentProps<TValue> = {

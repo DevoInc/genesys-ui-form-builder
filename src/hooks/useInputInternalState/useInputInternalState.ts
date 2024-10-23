@@ -3,11 +3,11 @@ import * as React from 'react';
 import { ACTION, internalStateReducer } from './reducer';
 import { defaultValidate } from './defaults';
 import type { TValidateFunction } from './definitions';
-import { OnChangeFuntion } from '../../../types/definitions';
+import { TOnChangeFuntion } from '../../types/definitions';
 
 interface UseInputInternalStateProps {
   value: number | string;
-  onChange: OnChangeFuntion<number | string>;
+  onChange: TOnChangeFuntion<number | string>;
   method?: 'onBlur' | 'onChange';
   validate?: TValidateFunction;
   focusRef?: React.MutableRefObject<boolean>;

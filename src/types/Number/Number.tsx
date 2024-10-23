@@ -6,10 +6,10 @@ import {
   useInputInternalState,
   type TValidateFunction,
   METHODS,
-} from '../hooks';
+} from '../../hooks';
 import { normalize, round } from './filter';
 import { TComponentProps, TMethod } from '../definitions';
-import { useFocus } from '../hooks/useFocus';
+import { useFocus } from '../../hooks/useFocus';
 
 export interface NumberProps extends TComponentProps<number> {
   id: string;

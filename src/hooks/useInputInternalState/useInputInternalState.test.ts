@@ -16,7 +16,7 @@ describe('hook', () => {
 
       expect(typeof result.current.handleChange).toBe('function');
       expect(typeof result.current.triggerOnChange).toBe('function');
-      expect(result.current.status).toBeNull();
+      expect(result.current.status).toBe("base");
       expect(result.current.message).toBeNull();
       expect(result.current.innerValue).toBe(5);
     });
