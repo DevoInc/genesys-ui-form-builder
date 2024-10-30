@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import { DateTimeRangeFloatingPicker } from '@devoinc/genesys-ui-datetime';
 
-import { TDateRangeType, ValidateResultType } from './definitions';
-import { TComponentProps } from '../definitions';
+import type { TDateRangeType, TValidateResult } from './definitions';
+import type { TComponentProps } from '../definitions';
 
 export interface CalendarProps extends TComponentProps<TDateRangeType> {
   locale: string;
@@ -11,7 +11,7 @@ export interface CalendarProps extends TComponentProps<TDateRangeType> {
   size: 'sm' | 'md' | 'lg';
   timezone: string;
   validateDate: () => boolean;
-  validateExpression: () => ValidateResultType;
+  validateExpression: () => TValidateResult;
   validateOnApply: () => boolean;
   validFormats: string[];
   width: string;

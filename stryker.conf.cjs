@@ -6,5 +6,6 @@ module.exports = {
   reporters: ['html', 'clear-text', 'progress'],
   testRunner: 'vitest',
   coverageAnalysis: 'perTest',
-  ignorePatterns: ['dist', 'coverage'],
+  ignorePatterns: ['dist', 'coverage', 'src/**/*.stories.tsx'],
+  ignoreStatic: true,
 };

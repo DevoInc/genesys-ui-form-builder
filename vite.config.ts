@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   build: {
@@ -24,11 +25,11 @@ export default defineConfig({
         'react-dom',
         // 'react-range',
         'styled-components',
-        // 'lodash',
       ],
     },
   },
   plugins: [
+    tsconfigPaths(),
     react(),
     visualizer({
       filename: 'dist/stats.html',
@@ -37,6 +38,12 @@ export default defineConfig({
   test: {
     environment: 'happy-dom',
     include: ['src/**/*.test.ts?(x)'],
+    server: {
+      deps: {
+        external: [/\/node_modules\//, 'react-windowed-select'],
+        fallbackCJS: true,
+      },
+    },
     coverage: {
       provider: 'v8',
       include: ['src/**/*'],

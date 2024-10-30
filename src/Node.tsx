@@ -69,7 +69,6 @@ export const Node: React.FC<INodeProps> = ({
         paddingTop={
           type != 'group' && level == 0 && ordinal != 0 ? 'cmp-md' : '0'
         }
-        className={'form-builder-node'}
       >
         <Cmp
           level={level}

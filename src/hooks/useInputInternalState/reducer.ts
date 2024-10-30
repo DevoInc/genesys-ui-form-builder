@@ -22,20 +22,21 @@ export interface InternalState {
 export const internalStateReducer = (
   state: InternalState,
   action: InternalStateAction,
-) => {
-  switch (action.type) {
-    case ACTION.RESET:
-      return { status: null, message: null, innerValue: action.value };
-    case ACTION.UPDATE_INNER_VALUE:
-      return action.value !== state.innerValue
-        ? { ...state, innerValue: action.value }
-        : state;
-    case ACTION.UPDATE:
-      return {
-        status: action.status ?? null,
-        message: action.message ?? null,
+) =>
+  action.type === ACTION.RESET
+    ? {
+        status: 'base',
+        message: null,
         innerValue: action.value,
-      };
-  }
-  return state;
-};
+      }
+    : action.type === ACTION.UPDATE_INNER_VALUE
+      ? action.value !== state.innerValue
+        ? { ...state, innerValue: action.value }
+        : state
+      : action.type === ACTION.UPDATE
+        ? {
+            status: action.status ?? 'base',
+            message: action.message ?? null,
+            innerValue: action.value,
+          }
+        : state;

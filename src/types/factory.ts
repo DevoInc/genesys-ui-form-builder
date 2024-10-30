@@ -1,5 +1,5 @@
-import { ModelNodeType } from '../model';
-import { ComponentProps } from './definitions';
+import type { TNodeType } from '../model';
+import type { TComponentProps } from './definitions';
 
 import { Bool } from './Bool';
 import { Calendar } from './Calendar';
@@ -37,5 +37,5 @@ const factory = {
   toggle: Toggle,
 };
 
-export const getComponent = (type: ModelNodeType): React.FC<ComponentProps> =>
+export const getComponent = (type: TNodeType): React.FC<TComponentProps> =>
   factory[type] ? factory[type] : null;

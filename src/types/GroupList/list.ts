@@ -1,6 +1,4 @@
-import { cloneDeep } from 'lodash';
-
-import { IModelNode } from '../../model';
+import { cloneNodeList, IModelNode } from '../../model';
 
 /**
  * Remove an item from the list
@@ -14,7 +12,7 @@ export const remove = (list: IModelNode[], key: string) =>
 export const move = (
   list: IModelNode[],
   itemKey: string,
-  targetKey: string
+  targetKey: string,
 ) => {
   // If equals then we are moving to the very same position
   if (itemKey === targetKey) {
@@ -56,8 +54,8 @@ export const add = (
   list: IModelNode[],
   prototype: IModelNode[],
   key: string,
-  name: string
+  name: string,
 ) =>
   list.concat([
-    { key, type: 'groupListItem', name, children: cloneDeep(prototype) },
+    { key, type: 'groupListItem', name, children: cloneNodeList(prototype) },
   ]);

@@ -22,6 +22,7 @@ const config: StorybookConfig = {
         include: [
           '@storybook/blocks',
           '@storybook/addon-themes',
+          '@storybook/theming',
           '@devoinc/genesys-brand-devo',
           'styled-components',
         ],

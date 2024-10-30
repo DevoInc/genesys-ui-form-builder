@@ -8,13 +8,13 @@ export type TOnChangeFuntion<T> = (
   reset?: TResetFunction,
 ) => void;
 
-export type TComponentProps<TValue> = {
+export type TComponentProps<T = string | number | boolean> = {
   level?: number;
   ordinal?: number;
   sibilings?: number;
-  onChange?: TOnChangeFuntion<TValue>;
+  onChange?: TOnChangeFuntion<T>;
   padding?: string;
-  value?: TValue;
+  value?: T;
   childrenModel?: IModelNode[];
   action?: IModelNodeAction;
   children?: React.ReactNode;

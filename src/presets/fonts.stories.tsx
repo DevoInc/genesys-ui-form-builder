@@ -5,6 +5,7 @@ import { FormBuilderTmpl } from '../stories';
 
 const meta: Meta = {
   title: 'Presets/Fonts',
+  component: FormBuilderTmpl,
 };
 
 export default meta;

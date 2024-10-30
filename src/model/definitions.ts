@@ -1,4 +1,4 @@
-export type ModelNodeType =
+export type TNodeType =
   | 'hidden'
   | 'bool'
   | 'calendar'
@@ -25,7 +25,7 @@ export interface IModelNodeAction {
 
 export interface IModelNode {
   key: string;
-  type: ModelNodeType;
+  type: TNodeType;
   children?: IModelNode[];
   visible?: boolean;
   action?: IModelNodeAction;

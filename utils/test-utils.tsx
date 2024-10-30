@@ -11,7 +11,7 @@ import { light } from '@devoinc/genesys-brand-devo';
 
 const AllTheProviders: React.FC<{ children: React.ReactNode }> = ({
   children,
-}) => <ThemeProvider theme={{ ...light }}>{children}</ThemeProvider>;
+}) => <ThemeProvider theme={light}>{children}</ThemeProvider>;
 
 const customRender = (
   ui: React.ReactElement,

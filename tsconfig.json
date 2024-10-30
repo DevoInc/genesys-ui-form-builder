@@ -6,11 +6,11 @@
     ],
     "jsx": "react",
     "paths": {
-      "test-utils": [
-        "./utils/test-utils"
-      ],
       "@sb": [
         "./src/stories/index"
+      ],
+      "@test": [
+        "./utils/test-utils.tsx"
       ]
     },
     "declaration": true,

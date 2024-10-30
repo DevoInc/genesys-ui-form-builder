@@ -4,7 +4,7 @@ export type TDateRangeType = {
   realTime: boolean;
 };
 
-export type ValidateResultType = {
+export type TValidateResult = {
   result: boolean;
   errorMessage: string;
 };
