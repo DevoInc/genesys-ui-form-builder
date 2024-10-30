@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
 import { FormBuilder } from './FormBuilder';
@@ -12,6 +13,7 @@ export default meta;
 type Story = StoryObj<typeof FormBuilderTmpl>;
 
 export const Example: Story = {
+  render: ({ model }) => <FormBuilderTmpl model={model} />,
   args: {
     model: {
       children: [
@@ -350,6 +352,7 @@ elit. Maecenas vitae elementum neque.',
 };
 
 export const WithoutGroup: Story = {
+  render: ({ model }) => <FormBuilderTmpl model={model} />,
   args: {
     model: {
       children: [
