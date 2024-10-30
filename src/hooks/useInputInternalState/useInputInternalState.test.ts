@@ -155,7 +155,7 @@ describe('hook', () => {
         result.current.handleChange(5);
       });
       expect(result.current.innerValue).toBe(5);
-      expect(result.current.status).toBeNull();
+      expect(result.current.status).toBe('base');
       expect(result.current.message).toBeNull();
       act(() => {
         result.current.handleChange(10);
@@ -169,7 +169,7 @@ describe('hook', () => {
       });
       expect(fn).toHaveBeenCalledTimes(0);
       expect(result.current.innerValue).toBeUndefined();
-      expect(result.current.status).toBeNull();
+      expect(result.current.status).toBe('base');
       expect(result.current.message).toBeNull();
     });
 

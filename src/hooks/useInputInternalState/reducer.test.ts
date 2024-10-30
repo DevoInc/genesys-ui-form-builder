@@ -20,7 +20,7 @@ describe('hook', () => {
           'reset',
           { status: 'error', message: 'test', innerValue: 5 },
           { type: ACTION.RESET, value: 10 },
-          { status: null, message: null, innerValue: 10 },
+          { status: 'base', message: null, innerValue: 10 },
         ],
         [
           'update inner value',

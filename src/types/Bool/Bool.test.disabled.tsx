@@ -8,7 +8,7 @@ describe('types', () => {
   describe('Bool', () => {
     it('default', () => {
       render(<Bool />);
+      expect(screen.getByText('test')).toBeInTheDocument();
     });
-    expect(screen.getByText('test')).toBeInTheDocument();
   });
 });
