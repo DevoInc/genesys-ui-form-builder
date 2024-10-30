@@ -23,7 +23,7 @@
     "clean": "rm -rf coverage dist node_modules/.cache/storybook",
     "test": "vitest",
     "lint": "oxlint -c oxlintrc.json",
-    "build": "vite build && tsc --project tsconfig.build.json",
+    "build": "vite build",
     "prerelease": "npm run test && npm run eslint && npm run build",
     "release": "standard-version",
     "postrelease": "git push --follow-tags",
