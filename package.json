@@ -1,11 +1,14 @@
 {
   "name": "@devoinc/genesys-ui-form-builder",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A form builder based on a descriptive field model for Genesys UI ecosystem ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevoInc/genesys-ui-form-builder.git"
+  },
+  "license": "MIT",
+  "author": "Devo, Inc. Quvis Team (https://github.com/orgs/DevoInc/teams/quvis)",
   "type": "module",
-  "types": "dist/index.d.js",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -16,25 +19,28 @@
       "require": "./dist/style.css"
     }
   },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "clean": "rm -rf coverage dist node_modules/.cache/storybook",
-    "test": "vitest",
-    "lint": "oxlint -c oxlintrc.json",
     "build": "vite build",
-    "prerelease": "npm run test && npm run eslint && npm run build",
-    "release": "standard-version",
-    "postrelease": "git push --follow-tags",
-    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "clean": "rm -rf coverage dist node_modules/.cache/storybook",
+    "compile:watch": "tsc --noEmit --watch",
+    "lint": "oxlint -c oxlintrc.json",
+    "release": "release-it --dry-run",
+    "release:ci": "release-it --ci",
     "start": "npm run storybook",
+    "storybook": "storybook dev -p 6006",
     "stryker": "npx stryker run",
-    "compile:watch": "tsc --noEmit --watch"
+    "test": "vitest"
   },
   "devDependencies": {
     "@devoinc/genesys-brand-devo": "8.x.x",
+    "@release-it/conventional-changelog": "^9.0.2",
     "@storybook/addon-a11y": "^8.4.2",
     "@storybook/addon-essentials": "^8.4.2",
     "@storybook/addon-themes": "^8.4.2",
@@ -49,6 +55,7 @@
     "happy-dom": "^15.11.0",
     "oxlint": "^0.11.0",
     "prettier": "^3.3.3",
+    "release-it": "^17.10.0",
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.80.6",
     "storybook": "^8.4.2",
@@ -72,15 +79,9 @@
     "react-dom": "18.x.x || 20.x.x",
     "styled-components": "6.x.x"
   },
-  "author": "Devo, Inc. Quvis Team (https://github.com/orgs/DevoInc/teams/quvis)",
-  "license": "MIT",
   "engines": {
     "node": ">=18",
     "npm": ">=8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DevoInc/genesys-ui-form-builder.git"
   },
   "publishConfig": {
     "access": "public"
