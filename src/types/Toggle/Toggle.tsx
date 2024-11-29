@@ -12,20 +12,38 @@ type Option = {
   disabled?: boolean;
 };
 
-type Props = TComponentProps<string> & {
+export interface ToggleProps extends TComponentProps<string | string[]> {
+  /** Options values */
   options: Option[];
-  value: string;
-  onChange: (value: string) => void;
+  /** Allow to selecte several chips */
+  isMulti: boolean;
+}
+
+const toggleArrayOption = (arr: string[], value: string) => {
+  if (arr.includes(value)) {
+    return arr.filter((x) => x !== value);
+  } else {
+    return [...arr, value];
+  }
 };
 
-export const Toggle: React.FC<Props> = ({ options, value, onChange }) => (
+export const Toggle: React.FC<ToggleProps> = ({
+  options,
+  isMulti = false,
+  value,
+  onChange,
+}) => (
   <ContentSwitcher>
     {options.map((option) => (
       <ContentSwitcher.Item
         key={option.value}
-        state={value === option.value ? 'selected' : null}
+        state={value === option.value ? 'selected' : undefined}
         onClick={() => {
-          onChange?.(option.value);
+          if (isMulti) {
+            onChange?.(toggleArrayOption(value as string[], option.value));
+          } else {
+            onChange?.(option.value);
+          }
         }}
       >
         {option.label}

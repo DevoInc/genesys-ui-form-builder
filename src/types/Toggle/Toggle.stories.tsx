@@ -1,6 +1,7 @@
+import * as React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
-import { Toggle } from './Toggle';
+import { Toggle, ToggleProps } from './Toggle';
 
 const meta: Meta<typeof Toggle> = {
   title: 'Types/Toggle',
@@ -10,7 +11,7 @@ const meta: Meta<typeof Toggle> = {
 export default meta;
 type Story = StoryObj<typeof Toggle>;
 
-export const Base: Story = {
+export const Playground: Story = {
   args: {
     value: 'left',
     options: [
@@ -33,7 +34,7 @@ export const Base: Story = {
   },
   parameters: {
     docs: {
-      language: 'js',
+      language: 'ts',
       source: {
         code: `{
   type: 'toggle',
@@ -62,5 +63,18 @@ export const Base: Story = {
   },
   argTypes: {
     onChange: { action: 'onChange' },
+  },
+  render: (props) => {
+    const [state, setState] = React.useState(props.value);
+    return (
+      <Toggle
+        {...props}
+        value={state}
+        onChange={(newValue) => {
+          console.log(newValue);
+          setState(newValue);
+        }}
+      />
+    );
   },
 };
