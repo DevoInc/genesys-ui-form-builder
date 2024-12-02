@@ -71,6 +71,7 @@ export const Playground: Story = {
         {...props}
         value={state}
         onChange={(newValue) => {
+          // eslint-disable-next-line no-console
           console.log(newValue);
           setState(newValue);
         }}
