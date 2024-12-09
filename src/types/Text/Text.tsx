@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Input } from '@devoinc/genesys-ui';
+import { Input, type TFieldStatus } from '@devoinc/genesys-ui';
 
 import {
   useInputInternalState,
@@ -62,7 +62,7 @@ export const Text: React.FC<TextProps> = ({
         }
       }}
       placeholder={placeholder}
-      status={status}
+      status={status as TFieldStatus}
       value={innerValue}
     />
   );

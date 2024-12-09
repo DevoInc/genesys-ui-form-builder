@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Textarea } from '@devoinc/genesys-ui';
+import { Textarea, type TFieldStatus } from '@devoinc/genesys-ui';
 
 import { useInputInternalState, TValidateFunction, METHODS } from '../../hooks';
 import { TComponentProps, TMethod } from '../definitions';
@@ -9,6 +9,7 @@ import { useFocus } from '../../hooks/useFocus';
 export interface TextAreaProps extends TComponentProps<string> {
   disabled: boolean;
   helper: string;
+  id: string;
   method: TMethod;
   name: string;
   placeholder: string;
@@ -26,6 +27,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
   validation,
   value,
   rows,
+  id,
 }) => {
   const { focusRef, takeFocus, looseFocus } = useFocus();
   const { innerValue, status, message, triggerOnChange, handleChange } =
@@ -38,8 +40,9 @@ export const TextArea: React.FC<TextAreaProps> = ({
     });
   return (
     <Textarea
+      id={id}
       disabled={disabled}
-      helper={helper}
+      helper={status === 'error' ? message : helper}
       label={name}
       onBlur={() => {
         looseFocus();
@@ -52,9 +55,8 @@ export const TextArea: React.FC<TextAreaProps> = ({
       }}
       onFocus={takeFocus} // TODO: it's used?
       placeholder={placeholder}
-      status={status}
+      status={status as TFieldStatus}
       rows={rows}
-      validationMsg={message}
       value={innerValue}
     />
   );
