@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.1.4...0.1.5) (2024-12-09)
+
+### Bug Fixes
+
+* avoid node key on spread ([d16b769](https://github.com/DevoInc/genesys-ui-form-builder/commit/d16b7698550fbab52a8c6f47c396d746f2f2fd4a))
+* missing status type ([95eb020](https://github.com/DevoInc/genesys-ui-form-builder/commit/95eb0209dab1a28827ed3a37fd1661dcfa69b699))
+
 ## [0.1.4](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.1.3...0.1.4) (2024-12-02)
 
 ## [0.1.3](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.1.2...0.1.3) (2024-11-27)
