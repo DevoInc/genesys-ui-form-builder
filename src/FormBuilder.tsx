@@ -13,17 +13,20 @@ export const FormBuilder: React.FC<IFormBuilderContextProps> = ({
 }) => (
   <FormBuilderContext.Provider value={{ model, onChange, actions }}>
     <Flex flexDirection="column">
-      {model.children.map((node: IModelNode, idx) => (
-        <Node
-          key={node.key}
-          nodeKey={node.key}
-          parentPath={['children']}
-          level={0}
-          ordinal={idx}
-          sibilings={model.children.length}
-          {...node}
-        />
-      ))}
+      {model.children.map((node: IModelNode, idx) => {
+        const { key, ...rest } = node;
+        return (
+          <Node
+            key={key}
+            nodeKey={key}
+            parentPath={['children']}
+            level={0}
+            ordinal={idx}
+            sibilings={model.children.length}
+            {...rest}
+          />
+        );
+      })}
     </Flex>
   </FormBuilderContext.Provider>
 );

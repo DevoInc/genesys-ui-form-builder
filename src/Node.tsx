@@ -81,17 +81,20 @@ export const Node: React.FC<INodeProps> = ({
           {...props}
         >
           {children &&
-            children.map((node, idx) => (
-              <Node
-                key={node.key}
-                nodeKey={node.key}
-                parentPath={path.concat(['children'])}
-                level={level + 1}
-                ordinal={idx}
-                sibilings={children.length}
-                {...node}
-              />
-            ))}
+            children.map((node, idx) => {
+              const { key, ...rest } = node;
+              return (
+                <Node
+                  key={key}
+                  nodeKey={key}
+                  parentPath={path.concat(['children'])}
+                  level={level + 1}
+                  ordinal={idx}
+                  sibilings={children.length}
+                  {...rest}
+                />
+              );
+            })}
         </Cmp>
       </Flex.Item>
     )
