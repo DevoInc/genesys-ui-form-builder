@@ -75,8 +75,8 @@
     "@dnd-kit/modifiers": "8.x",
     "@dnd-kit/sortable": "9.x",
     "@dnd-kit/utilities": "3.x",
-    "react": "^16.3.0 || 17.x || 18.x",
-    "react-dom": "^16.3.0 || 17.x || 18.x",
+    "react": "^16.3.0 || 17.x || 18.x || 19.x",
+    "react-dom": "^16.3.0 || 17.x || 18.x || 19.x",
     "styled-components": "5.x || 6.x"
   },
   "engines": {
