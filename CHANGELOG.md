@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.0](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.1.5...0.2.0) (2024-12-19)
+
+### Features
+
+* added react 19 compatibility ([5a0440a](https://github.com/DevoInc/genesys-ui-form-builder/commit/5a0440ab4088af39b85fee97caa8826b2be036b6))
+
 ## [0.1.5](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.1.4...0.1.5) (2024-12-09)
 
 ### Bug Fixes
