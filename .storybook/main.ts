@@ -24,6 +24,7 @@ const config: StorybookConfig = {
           '@storybook/addon-themes',
           '@storybook/theming',
           '@devoinc/genesys-brand-devo',
+          '@devoinc/genesys-ui',
           'styled-components',
         ],
       },
