@@ -10,21 +10,17 @@
         "./src/stories/index"
       ],
       "@test": [
-        "./utils/test-utils.tsx"
+        "./test/test-utils.tsx"
       ]
     },
-    "declaration": true,
-    "declarationMap": true,
     "esModuleInterop": true,
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "sourceMap": true,
     "target": "ES6",
     "resolveJsonModule": true
   },
   "include": [
     "src",
-    "src/stories",
-    "doc"
   ]
 }
