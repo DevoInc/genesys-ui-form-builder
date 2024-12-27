@@ -1,4 +1,4 @@
-import type { IModelNode, ModelNodeType, IModelNodeAction } from './model';
+import type { IModelNode, TNodeType, IModelNodeAction } from './model';
 
 export type ChangeFunction = (val: unknown) => void;
 export type ResetFunction = (val: unknown) => void;
@@ -14,7 +14,7 @@ export type ActionFunction = (props: IActionFunctionProps) => void;
 
 export interface INodeProps {
   nodeKey: string;
-  type: ModelNodeType;
+  type: TNodeType;
   children?: IModelNode[];
   parentPath: string[];
   level: number;

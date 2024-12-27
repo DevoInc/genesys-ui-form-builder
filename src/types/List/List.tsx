@@ -52,10 +52,11 @@ export const List: React.FC<ListProps> = ({
     creatable={creatable}
     id={id}
     isMulti={isMulti}
-    onChange={(nextValue: OptionType | OptionType[]) => {
+    onChange={(nextValue) => {
       onChange(getValue(nextValue));
     }}
     options={validateOptions(options)}
+    size={'md'}
     placeholder={placeholder}
     sortable={isSortable}
     value={validateValue(value)}

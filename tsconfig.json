@@ -17,12 +17,9 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "sourceMap": true,
     "target": "ES6",
-    "types": [
-      "jest"
-    ],
     "resolveJsonModule": true
   },
   "include": [
