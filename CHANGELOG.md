@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.2.1](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.2.0...0.2.1) (2024-12-27)
+
 ## [0.2.0](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.1.5...0.2.0) (2024-12-19)
 
 ### Features
