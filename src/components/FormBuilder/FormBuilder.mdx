@@ -1,0 +1,64 @@
+import { Meta, Canvas, Source } from '@storybook/blocks';
+
+import * as Stories from './FormBuilder.stories';
+
+<Meta of={Stories} />
+
+## Example
+
+This is an example of the `FormBuilder` with some elements
+
+<Canvas of={Stories.Example} />
+
+## Without group
+
+This is an example of the `FormBuilder` without group.
+
+<Canvas of={Stories.WithoutGroup} />
+
+## Custom field
+
+We can also add our own fields to the `FormBuilder` using the prop `fields`, for
+example, in the next code you will see a new field `custom` that only render the
+`value` on it:
+
+<Source dark={true} code={`
+...
+fields={{
+  custom: ({
+    value, // current value of the field
+  }) => {
+    return <div>{value}</div>
+  }
+}}
+...
+`} />
+
+<Canvas of={Stories.CustomField} />
+
+**Note:** The custom fields will override the predefined one, so if you use a
+field with the key `number` will override the `number` predefined field.
+
+## Actions
+
+Actions are the way to insert custom behaviors on the form builder, you can add
+an action and then call it from any field.
+
+<Canvas of={Stories.Actions} />
+
+The `actions` prop are an object with the name of the action as `key` and the
+callback as the `value`.
+
+For the callback the interface is an object with this properties:
+
+- **prev:** The previous value
+- **next:** The next value
+- **props:** The props of the field
+- **change:** The callback for update the value
+  ```js
+  (value: any) => void
+  ```
+- **reset:** The callback for return to the previous value
+  ```js
+  () => void
+  ```

@@ -1,11 +1,10 @@
-import type { ActionFunction } from '../definitions';
-import type { IModelNodeAction } from '../model';
+import type { TActionFunction, IModelNodeAction } from '../definitions';
 
 export const findActionFn: (
   actions: {
-    [id: string]: ActionFunction;
+    [id: string]: TActionFunction;
   },
   action: IModelNodeAction,
-) => ActionFunction = (actions, action) => {
+) => TActionFunction = (actions, action) => {
   return action && action.id && actions[action.id];
 };

@@ -3,14 +3,14 @@ import * as React from 'react';
 import { ACTION, internalStateReducer } from './reducer';
 import { defaultValidate } from './defaults';
 import type { TValidateFunction } from './definitions';
-import { TOnChangeFuntion } from '../../types/definitions';
+import { TOnChangeFuntion } from '../../definitions';
 
 interface UseInputInternalStateProps {
   value: number | string;
-  onChange: TOnChangeFuntion<number | string>;
+  onChange: TOnChangeFuntion;
   method?: 'onBlur' | 'onChange';
   validate?: TValidateFunction;
-  focusRef?: React.MutableRefObject<boolean>;
+  focusRef?: React.RefObject<boolean>;
 }
 
 export enum METHODS {

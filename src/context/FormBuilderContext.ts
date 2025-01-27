@@ -1,18 +1,10 @@
 import * as React from 'react';
 
-import { IModel } from '../model';
-import { ChangeFunction, ActionFunction } from '../definitions';
+import type { IFormBuilderProps } from '../definitions';
 
-export interface IFormBuilderContextProps {
-  model: IModel;
-  actions?: { [id: string]: ActionFunction };
-  onChange: ChangeFunction;
-}
-
-export const FormBuilderContext = React.createContext<IFormBuilderContextProps>(
-  {
-    model: null,
-    actions: {},
-    onChange: null,
-  },
-);
+export const FormBuilderContext = React.createContext<IFormBuilderProps>({
+  model: { children: [] },
+  actions: {},
+  onChange: () => {},
+  fields: [],
+});

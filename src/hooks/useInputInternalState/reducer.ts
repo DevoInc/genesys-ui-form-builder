@@ -22,7 +22,7 @@ export interface InternalState {
 export const internalStateReducer = (
   state: InternalState,
   action: InternalStateAction,
-) =>
+): InternalState =>
   action.type === ACTION.RESET
     ? {
         status: 'base',
