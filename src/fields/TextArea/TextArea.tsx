@@ -45,6 +45,7 @@ export const TextArea: React.FC<TextAreaProps> = ({
       disabled={disabled}
       helper={status === 'error' ? message : helper}
       label={name}
+      aria-labelledby={name}
       onBlur={() => {
         looseFocus();
         if (method === METHODS.INDIRECT) {

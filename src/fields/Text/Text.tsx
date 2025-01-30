@@ -47,6 +47,7 @@ export const Text: React.FC<TextProps> = ({
       helper={message || helper}
       id={id}
       label={name}
+      aria-labelledby={name}
       onBlur={() => {
         looseFocus();
         if (method === METHODS.INDIRECT) {
