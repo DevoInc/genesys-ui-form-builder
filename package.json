@@ -1,6 +1,6 @@
 {
   "name": "@devoinc/genesys-ui-form-builder",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A form builder based on a descriptive field model for Genesys UI ecosystem ",
   "repository": {
     "type": "git",

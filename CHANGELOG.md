@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.0](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.2.2...0.3.0) (2025-01-30)
+
+### Features
+
+* added custom fields ([0dc12a1](https://github.com/DevoInc/genesys-ui-form-builder/commit/0dc12a1d4cf8ba045df981a12eb9db634da571cb))
+
 ## [0.2.2](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.2.1...0.2.2) (2025-01-16)
 
 ## [0.2.1](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.2.0...0.2.1) (2024-12-27)
