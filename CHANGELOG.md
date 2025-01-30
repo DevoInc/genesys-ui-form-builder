@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.3.0...0.4.0) (2025-01-30)
+
+### Features
+
+* added accessibility aria-labeledby to text and textarea ([97a2b21](https://github.com/DevoInc/genesys-ui-form-builder/commit/97a2b218e674b719cd19a557e5ca56594869e92a))
+
 ## [0.3.0](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.2.2...0.3.0) (2025-01-30)
 
 ### Features
