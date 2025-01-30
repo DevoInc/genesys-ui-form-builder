@@ -5,7 +5,7 @@ import { Group } from './Group';
 import { FormBuilder } from '../../components';
 
 const meta: Meta<typeof Group> = {
-  title: 'Types/Group',
+  title: 'Fields/Group',
   component: Group,
 };
 

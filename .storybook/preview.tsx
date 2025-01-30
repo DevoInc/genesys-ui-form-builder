@@ -46,7 +46,7 @@ const preview: Preview = {
           'Visibility',
           'Validation',
           'Actions',
-          'Types',
+          'Fields',
           'Presets',
           ['Introduction'],
           'Migrations',

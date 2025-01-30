@@ -1,10 +1,22 @@
-import { Meta, Canvas } from '@storybook/blocks';
+import { Meta, Canvas, Source } from '@storybook/blocks';
 
 import * as Stories from './CodeBox.stories';
 
 <Meta of={Stories} />
 
 # CodeBox
+
+<Source dark={true} code={`
+{
+  type: 'codebox',
+  key: 'key',
+  editable: true,
+  name: 'CodeBox name',
+  padding: '0',
+  placeholder: 'This is the placeholder',
+  value: 'Some code for the CodeBox :)',
+}
+`} />
 
 ## Example
 

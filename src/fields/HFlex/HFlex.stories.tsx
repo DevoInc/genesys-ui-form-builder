@@ -3,7 +3,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { HFlex } from './HFlex';
 
 const meta: Meta<typeof HFlex> = {
-  title: 'Types/HFlex',
+  title: 'Fields/HFlex',
   component: HFlex,
 };
 

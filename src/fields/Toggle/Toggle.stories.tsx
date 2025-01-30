@@ -9,7 +9,7 @@ import {
 } from '@devoinc/genesys-icons';
 
 const meta: Meta<typeof Toggle> = {
-  title: 'Types/Toggle',
+  title: 'Fields/Toggle',
   component: Toggle,
 };
 

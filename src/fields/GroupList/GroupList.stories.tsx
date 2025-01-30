@@ -6,7 +6,7 @@ import { FormBuilder } from '../../components';
 import type { IModel } from '../../definitions';
 
 const meta: Meta<typeof GroupList> = {
-  title: 'Types/GroupList',
+  title: 'Fields/GroupList',
   component: GroupList,
 };
 

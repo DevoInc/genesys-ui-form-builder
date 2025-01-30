@@ -7,7 +7,7 @@ import { Number } from './Number';
 import { FormBuilder } from '../../components';
 
 const meta: Meta<typeof Number> = {
-  title: 'Types/Number',
+  title: 'Fields/Number',
   component: Number,
 };
 

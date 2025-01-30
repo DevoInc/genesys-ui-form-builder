@@ -17,6 +17,7 @@ export interface IModelNode {
   action?: IModelNodeAction;
   isDraggable?: boolean;
   name?: string;
+  // modifiers?: TModifier[];
   [key: string]: unknown;
 }
 
@@ -49,8 +50,8 @@ export type TComponentProps = {
   ordinal?: number;
   /** Number of sibilings on the same level */
   sibilings?: number;
-  /** Padding calculated by the parent element.
-   * TODO: This should be refactored. */
+  /** Padding calculated by the parent element */
+  // TODO: This should be refactored.
   padding?: string;
   /** All the nodes has value. */
   value?: unknown;
@@ -81,7 +82,24 @@ export interface INodeProps {
   sibilings?: number;
   visible?: boolean;
   action?: IModelNodeAction;
+  // modifiers?: TModifier[];
 }
+
+// Modifiers
+
+//export interface IModifierParams {
+//  fieldModel: IModelNode;
+//  model: IModel;
+//  newValue: unknown;
+//}
+//
+//export type TOnChangePromise = Promise<IModelNode>;
+//
+//export type TModifier = ({
+//  fieldModel,
+//  model,
+//  newValue,
+//}: IModifierParams) => TOnChangePromise;
 
 // FormBuilder
 
@@ -90,4 +108,5 @@ export interface IFormBuilderProps {
   actions?: { [id: string]: TActionFunction };
   onChange?: TChangeFunction;
   fields?: IFields;
+  // modifiers?: TModifier[];
 }

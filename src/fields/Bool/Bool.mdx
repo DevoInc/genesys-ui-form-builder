@@ -1,10 +1,20 @@
-import { Meta, Canvas } from '@storybook/blocks';
+import { Meta, Canvas, Source } from '@storybook/blocks';
 
 import * as Stories from './Bool.stories';
 
 <Meta of={Stories} />
 
 # Bool
+
+<Source dark={true} code={`
+{
+  type: 'bool',
+  key: 'key',
+  name: "Name text",
+  helper: 'This is a helper text',
+  value: true,
+}
+`} />
 
 ## Example
 

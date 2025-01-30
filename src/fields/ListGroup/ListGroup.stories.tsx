@@ -5,7 +5,7 @@ import { ListGroup } from './ListGroup';
 import { TemplateAxis } from './TemplateAxis';
 
 const meta: Meta<typeof ListGroup> = {
-  title: 'Types/ListGroup',
+  title: 'Fields/ListGroup',
   component: ListGroup,
 };
 

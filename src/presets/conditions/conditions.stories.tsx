@@ -6,7 +6,7 @@ import { getConditionPredicate } from './getConditionPredicate';
 import { FormBuilder } from '../../components';
 
 const meta: Meta = {
-  title: 'Presest/Conditions',
+  title: 'Presets/Conditions',
 };
 
 export default meta;

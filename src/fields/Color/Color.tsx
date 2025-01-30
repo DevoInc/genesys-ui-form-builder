@@ -16,10 +16,10 @@ export interface ColorProps extends TComponentProps {
 
 export const Color: React.FC<ColorProps> = ({
   defaultValue = 'rgba(0,0,0,0)',
-  disabled,
+  disabled = false,
   helper,
   method = 'onBlur',
-  name,
+  name = '',
   onChange,
   value,
 }) => (
@@ -28,7 +28,7 @@ export const Color: React.FC<ColorProps> = ({
     disabled={disabled}
     helper={helper}
     id={name}
-    label={name || ''}
+    label={name}
     liveUpdate={!(method && method === 'onBlur')}
     onChange={(val: string) => onChange(val, 'value')}
     size={'sm'}
