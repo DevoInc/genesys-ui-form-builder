@@ -69,8 +69,10 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <Panel elevation="ground" padding="cmp-lg">
-        <Story />
+      <Panel elevation="ground">
+        <Panel.Body padding='cmp-lg'>
+          <Story />
+        </Panel.Body>
       </Panel>
     ),
     withThemeFromJSXProvider<ReactRenderer>({
