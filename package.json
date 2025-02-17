@@ -110,6 +110,7 @@
     "access": "public"
   },
   "optionalDependencies": {
+    "@oxlint/linux-x64-gnu": "^0.15.11",
     "@rollup/rollup-linux-x64-gnu": "^4.34.8"
   }
 }
