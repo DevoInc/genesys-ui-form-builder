@@ -1,34 +1,33 @@
 import * as React from 'react';
 
-import { Select } from '@devoinc/genesys-ui';
+import { Select, SelectProps } from '@devoinc/genesys-ui';
 
 import { validateOptions, validateValue } from './validations';
 import { OptionType } from './definitions';
 import { TComponentProps } from '../../definitions';
 import { getValue } from './options';
 
-export interface ListProps extends TComponentProps {
-  value: string[] | string;
-  /** Allow to create items */
-  creatable?: boolean;
-  /** Text to show at the bottom of the component */
-  helper?: string;
+export interface ListProps
+  extends Omit<TComponentProps, 'value'>,
+    Pick<
+      SelectProps,
+      | 'creatable'
+      | 'helper'
+      | 'isClearable'
+      | 'isMulti'
+      | 'isSearchable'
+      | 'placeholder'
+      | 'value'
+    > {
+  // value: string[] | string;
   /** Identifier */
   id: string;
-  /** Allow to remove all elements from a select */
-  isClearable?: boolean;
-  /** Allow multiple options */
-  isMulti?: boolean;
-  /** Allow to show a serach of options */
-  isSearchable?: boolean;
   /** Allow to reorder the elements from a select */
   isSortable: boolean;
   /** Text for the label */
   name: string;
   /** Options values */
   options: OptionType[];
-  /** Text for the placeholder of the select */
-  placeholder: string;
 }
 
 export const List: React.FC<ListProps> = ({
