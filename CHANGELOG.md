@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.3](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.2...0.4.3) (2025-02-17)
+
+### Bug Fixes
+
+* **getValue:** value can be a string ([6a63ef1](https://github.com/DevoInc/genesys-ui-form-builder/commit/6a63ef155383612a35d71b3010ab56ad05dc1a1c))
+
 ## [0.4.2](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.1...0.4.2) (2025-02-17)
 
 ## [0.4.1](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.0...0.4.1) (2025-02-14)
