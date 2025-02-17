@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.4.4](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.3...0.4.4) (2025-02-17)
+
 ## [0.4.3](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.2...0.4.3) (2025-02-17)
 
 ### Bug Fixes
