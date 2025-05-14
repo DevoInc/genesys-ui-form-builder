@@ -3,6 +3,7 @@ import * as React from 'react';
 import { ChoiceGroup } from '@devoinc/genesys-ui';
 
 import { TComponentProps } from '../../definitions';
+import { slugify } from '../../helper/strings';
 
 type Option = {
   icon?: React.ReactNode;
@@ -46,8 +47,8 @@ export const Toggle: React.FC<ToggleProps> = ({
         : option.value === value;
       return (
         <ChoiceGroup.IconButton
-          id={option.value}
-          key={option.value}
+          id={slugify(option.value)}
+          key={slugify(option.value)}
           icon={option.icon}
           tooltip={option.label}
           state={isSelected ? 'selected' : 'enabled'}

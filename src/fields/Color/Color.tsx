@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ColorPicker } from '@devoinc/genesys-ui-color';
 
 import type { TComponentProps, TMethod } from '../../definitions';
-
+import { slugify } from '../../helper/strings';
 export interface ColorProps extends TComponentProps {
   value: string;
   defaultValue: string;
@@ -27,7 +27,7 @@ export const Color: React.FC<ColorProps> = ({
     defaultValue={defaultValue}
     disabled={disabled}
     helper={helper}
-    id={name}
+    id={slugify(name)}
     label={name}
     liveUpdate={!(method && method === 'onBlur')}
     onChange={(val: string) => onChange(val, 'value')}

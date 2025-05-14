@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@devoinc/genesys-brand-devo": "8.x.x",
-    "@release-it/conventional-changelog": "^10.0.0",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@storybook/addon-a11y": "^8.5.6",
     "@storybook/addon-essentials": "^8.5.6",
     "@storybook/addon-themes": "^8.5.6",
@@ -50,22 +50,22 @@
     "@stryker-mutator/core": "^8.7.1",
     "@stryker-mutator/vitest-runner": "^8.7.1",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "@vitest/coverage-v8": "^3.0.5",
-    "happy-dom": "^17.1.0",
-    "oxlint": "^0.15.11",
-    "prettier": "^3.5.1",
-    "release-it": "^18.1.2",
-    "sass": "^1.85.0",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vitest/coverage-v8": "^3.1.3",
+    "happy-dom": "^17.4.7",
+    "oxlint": "^0.16.10",
+    "prettier": "^3.5.3",
+    "release-it": "^19.0.2",
+    "sass": "^1.88.0",
     "storybook": "^8.5.6",
-    "terser": "^5.39.0",
-    "tsup": "^8.3.6",
-    "typescript": "^5.7.3",
+    "terser": "^5.39.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.0.5"
+    "vitest": "^3.1.3"
   },
   "peerDependencies": {
     "@devoinc/genesys-base-styles": ">=2",
@@ -110,7 +110,7 @@
     "access": "public"
   },
   "optionalDependencies": {
-    "@oxlint/linux-x64-gnu": "^0.15.11",
-    "@rollup/rollup-linux-x64-gnu": "^4.34.8"
+    "@oxlint/linux-x64-gnu": "^0.16.10",
+    "@rollup/rollup-linux-x64-gnu": "^4.40.2"
   }
 }
