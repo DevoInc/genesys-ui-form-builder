@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.5](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.4...0.4.5) (2025-05-14)
+
+### Bug Fixes
+
+* slugify ids ([abd7059](https://github.com/DevoInc/genesys-ui-form-builder/commit/abd70593982da336ab28cdb99857e1351cdd3140))
+
 ## [0.4.4](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.3...0.4.4) (2025-02-17)
 
 ## [0.4.3](https://github.com/DevoInc/genesys-ui-form-builder/compare/0.4.2...0.4.3) (2025-02-17)
