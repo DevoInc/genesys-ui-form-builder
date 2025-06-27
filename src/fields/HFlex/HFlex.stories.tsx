@@ -1,6 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react';
+import * as React from 'react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { HFlex } from './HFlex';
+import { Typography } from '@devoinc/genesys-ui';
 
 const meta: Meta<typeof HFlex> = {
   title: 'Fields/HFlex',
@@ -12,7 +14,11 @@ type Story = StoryObj<typeof HFlex>;
 
 export const Base: Story = {
   args: {
-    children: ['test', 'this', 'items'],
+    children: [
+      <Typography>Left</Typography>,
+      <Typography>Center</Typography>,
+      <Typography>Right</Typography>,
+    ],
     justifyContent: 'space-between',
   },
   parameters: {

@@ -6,16 +6,19 @@ const config: StorybookConfig = {
   core: {
     disableTelemetry: true,
   },
+
   stories: [
     '../stories/Welcome.mdx',
     '../stories/**/*.@(mdx|stories.tsx)',
     '../src/**/*.@(mdx|stories.tsx)',
   ],
+
   addons: [
-    '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-themes',
+    '@storybook/addon-docs'
   ],
+
   async viteFinal(config) {
     return mergeConfig(config, {
       optimizeDeps: {
@@ -31,13 +34,11 @@ const config: StorybookConfig = {
       plugins: [tsconfigPaths()],
     });
   },
+
   framework: {
     name: '@storybook/react-vite',
     options: {},
-  },
-  docs: {
-    autodocs: 'tag',
-  },
+  }
 };
 
 export default config;

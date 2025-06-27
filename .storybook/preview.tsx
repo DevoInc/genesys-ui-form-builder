@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Preview, ReactRenderer } from '@storybook/react';
+import { Preview, ReactRenderer } from '@storybook/react-vite';
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
 import { ThemeProvider } from 'styled-components';
-import { create } from '@storybook/theming';
+import { create } from 'storybook/theming';
 
 import { light, dark } from '@devoinc/genesys-brand-devo';
 import '@devoinc/genesys-base-styles/dist/css/styles.min.css';
@@ -70,7 +70,7 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <Panel elevation="ground">
-        <Panel.Body padding='cmp-lg'>
+        <Panel.Body padding="cmp-lg">
           <Story />
         </Panel.Body>
       </Panel>
